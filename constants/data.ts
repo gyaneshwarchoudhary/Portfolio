@@ -36,8 +36,8 @@ export const portfolioData = {
   ],
   social: {
     github: "https://github.com/gyaneshwarchoudhary",
-    linkedin: "",
-    twitter: "",
+    linkedin: "https://www.linkedin.com/in/gyaneshwar-choudhary-36619b238/",
+    twitter: "https://x.com/gyaneshwar__",
   },
   achievements: {
     featured: {
