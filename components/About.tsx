@@ -15,9 +15,9 @@ const AboutSection = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   const stats = [
-    { label: "Projects Completed", value: "15+", icon: "🚀" },
+    { label: "Projects Completed", value: "10+", icon: "🚀" },
     { label: "Technologies", value: "12+", icon: "⚡" },
-    { label: "GitHub Commits", value: "500+", icon: "💻" },
+    { label: "GitHub Commits", value: "50+", icon: "💻" },
     { label: "Coffee Consumed", value: "∞", icon: "☕" },
   ];
 
@@ -78,19 +78,30 @@ const AboutSection = () => {
               <ul className="space-y-2 text-slate-300">
                 <li className="flex items-start gap-2">
                   <span className="text-blue-400 mt-1">•</span>
-                  <span>Building scalable full-stack applications</span>
+                  <span>
+                    Building AI agents that interact with real services using
+                    MCP
+                  </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-blue-400 mt-1">•</span>
-                  <span>Exploring cloud technologies (AWS, Docker)</span>
+                  <span>
+                    Deploying containerized microservices with health checks and
+                    zero-downtime updates
+                  </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-blue-400 mt-1">•</span>
-                  <span>Contributing to open-source projects</span>
+                  <span>
+                    Implementing DevOps pipelines (Docker, Nginx, CI/CD, AWS)
+                  </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-blue-400 mt-1">•</span>
-                  <span>Learning system design and architecture patterns</span>
+                  <span>
+                    Studying system design patterns for real-time communication
+                    and event-driven architecture
+                  </span>
                 </li>
               </ul>
             </motion.div>
@@ -111,25 +122,26 @@ const AboutSection = () => {
 
             <div className="space-y-4 text-slate-300 leading-relaxed">
               <p>
-                I&apos;m a passionate Software Engineer with a love for building
-                elegant, efficient, and user-centric applications. My journey
-                began during my university years, where I discovered the perfect
-                blend of creativity and logic in software development.
+                I build systems that don&apos;t fall apart when the requirements
+                get messy. I work across full-stack web and edge-hardware
+                solutions, with production experience in React, Next.js,
+                Node.js, FastAPI, WebSockets, Docker, and cloud deployment.
               </p>
 
               <p>
-                With expertise in full-stack development, I specialize in
-                creating seamless web experiences using modern technologies like
-                React, Next.js, Node.js, and TypeScript. I&apos;m constantly
-                learning and pushing the boundaries of what&apos;s possible.
+                My work has won multiple national hackathons, including
+                OpinHacks 2023 and HackCBS 6.0, where I delivered accessibility
+                hardware with 90–98% cost reductions over commercial products.
+                I&apos;ve also been a top-5 finalist out of 1000+ teams at Smart
+                India Hackathon 2024 for developing a dual-interface
+                communication system for deaf individuals.
               </p>
 
               <p>
-                When I&apos;m not coding, you&apos;ll find me exploring new
-                technologies, contributing to open-source projects, or
-                participating in hackathons. I believe in writing clean,
-                maintainable code and staying up-to-date with industry best
-                practices.
+                I&apos;ve shipped projects from real-time collaboration tools to
+                AI voice tutoring systems, and I focus on performance, clean
+                architecture, and maintainable engineering — not quick hacks
+                that fall apart in production.
               </p>
             </div>
 

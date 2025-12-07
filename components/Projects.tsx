@@ -43,12 +43,17 @@ const Projects = () => {
 
               <div className="relative h-48 overflow-hidden">
                 <Image
-                  width={60}
-                  height={60}
-                  src={project.image}
+                  fill
+                  src={`/images/${project.image}`}
                   alt={project.title}
+                  sizes={
+                    idx === 0
+                      ? "(max-width: 768px) 100vw, (max-width: 1024px) 100vw, 66vw"
+                      : "(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  }
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
+
                 <div className="absolute inset-0 bg-linear-to-t from-slate-900 to-transparent" />
               </div>
 
@@ -72,6 +77,7 @@ const Projects = () => {
                 <a
                   href={project.link}
                   className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors"
+                  target="_blank"
                 >
                   View Project
                   <ExternalLink size={16} />

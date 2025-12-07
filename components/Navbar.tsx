@@ -44,7 +44,7 @@ const Navbar = () => {
             animate={{ opacity: 1 }}
             className="text-xl font-bold bg-linear-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent"
           >
-            AR
+            {"</>"}
           </motion.div>
 
           {/* Desktop Menu */}
@@ -60,7 +60,7 @@ const Navbar = () => {
               </a>
             ))}
             <a
-              href={portfolioData.personal.resumeUrl}
+              href={`/resume/${portfolioData.personal.resumeUrl}`}
               download
               className="bg-linear-to-r from-cyan-500 to-blue-600 text-white px-4 py-2 rounded-lg hover:shadow-lg hover:shadow-cyan-500/50 transition-all"
             >
@@ -96,7 +96,7 @@ const Navbar = () => {
               </a>
             ))}
             <a
-              href={portfolioData.personal.resumeUrl}
+              href={`/resume/${portfolioData.personal.resumeUrl}`}
               download
               className="block bg-linear-to-r from-cyan-500 to-blue-600 text-white px-4 py-2 rounded-lg mt-2 text-center"
             >

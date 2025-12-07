@@ -4,7 +4,7 @@ import React from "react";
 import { portfolioData } from "@/constants/data";
 import { motion } from "framer-motion";
 import { Download } from "lucide-react";
-// Hero Section
+
 const HeroSection = () => {
   return (
     <section
@@ -14,10 +14,31 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#0f172a_1px,transparent_1px),linear-gradient(to_bottom,#0f172a_1px,transparent_1px)] bg-size-[4rem_4rem] mask-[radial-gradient(ellipse_80%_50%_at_50%_0%,#000,transparent)]" />
 
       <div className="relative z-10 max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+        {/* IMAGE — mobile ABOVE, desktop RIGHT */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ delay: 0.4, duration: 0.8 }}
+          className="relative flex justify-center order-1 md:order-2"
+        >
+          <div className="relative w-60 h-60 sm:w-72 sm:h-72 md:w-80 md:h-80 mx-auto">
+            <div className="absolute inset-0 bg-linear-to-r from-cyan-500 to-blue-600 rounded-full blur-3xl opacity-30 animate-pulse" />
+            <Image
+              height={360}
+              width={360}
+              src={`/images/${portfolioData.personal.profileImage}`}
+              alt={portfolioData.personal.name}
+              className="relative rounded-full w-full h-full object-cover border-4 border-cyan-500/50 shadow-2xl"
+            />
+          </div>
+        </motion.div>
+
+        {/* TEXT — mobile BELOW, desktop LEFT */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
+          className="order-2 md:order-1"
         >
           <motion.h1
             className="text-5xl md:text-7xl font-bold mb-6"
@@ -54,7 +75,7 @@ const HeroSection = () => {
             </a>
 
             <a
-              href={portfolioData.personal.resumeUrl}
+              href={`/resume/${portfolioData.personal.resumeUrl}`}
               download
               className="px-8 py-4 border-2 border-cyan-500 rounded-lg font-semibold text-cyan-400 hover:bg-cyan-500/10 transition-all flex items-center gap-2"
             >
@@ -62,24 +83,6 @@ const HeroSection = () => {
               Download Resume
             </a>
           </motion.div>
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ delay: 0.4, duration: 0.8 }}
-          className="relative hidden md:block"
-        >
-          <div className="relative w-80 h-80 mx-auto">
-            <div className="absolute inset-0 bg-linear-to-r from-cyan-500 to-blue-600 rounded-full blur-3xl opacity-30 animate-pulse" />
-            <Image
-              height={60}
-              width={60}
-              src={portfolioData.personal.profileImage}
-              alt={portfolioData.personal.name}
-              className="relative rounded-full w-full h-full object-cover border-4 border-cyan-500/50 shadow-2xl"
-            />
-          </div>
         </motion.div>
       </div>
     </section>

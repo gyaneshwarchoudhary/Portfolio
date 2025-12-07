@@ -141,7 +141,7 @@ const Contact = () => {
                       />
                     </a>
                     <a
-                      href={portfolioData.personal.phone}
+                      href={`tel:${portfolioData.personal.phone}`}
                       target=""
                       rel="noopener noreferrer"
                       className="p-2 bg-slate-800 hover:bg-slate-700 rounded-lg transition-colors"
@@ -312,7 +312,7 @@ const Contact = () => {
               >
                 <Github
                   size={24}
-                  className="text-slate-300 hover:text-cyan-400 transition-colors"
+                  className="text-slate-300 hover:text-slate-800 transition-colors"
                 />
               </motion.a>
 
@@ -338,15 +338,19 @@ const Contact = () => {
               >
                 <Twitter
                   size={24}
-                  className="text-slate-300 hover:text-purple-400 transition-colors"
+                  className="text-slate-300 hover:text-blue-400 transition-colors"
                 />
               </motion.a>
             </motion.div>
 
             <div className="text-slate-500 text-sm">
-              <p>© 2024 {portfolioData.personal.name}. All rights reserved.</p>
+              <p>
+                {" "}
+                {new Date().getFullYear()} {portfolioData.personal.name}. All
+                rights reserved.
+              </p>
               <p className="mt-2">
-                Built with ❤️ using Next.js, Tailwind CSS & Framer Motion
+                Coded with care, built with ❤️, and powered by coffee.
               </p>
             </div>
           </div>

@@ -20,9 +20,9 @@ const education = [
 ];
 
 const certifications = [
-  { name: "React Developer Certificate", issuer: "Meta", year: "2024" },
-  { name: "JavaScript Algorithms", issuer: "freeCodeCamp", year: "2023" },
-  { name: "Responsive Web Design", issuer: "freeCodeCamp", year: "2023" },
+  { name: "React Developer Certificate", issuer: "DataCode", year: "2023" },
+  { name: "PostMan API Fundamental", issuer: "PostMan", year: "2024" },
+  { name: "Cerficate Of Participation", issuer: "hackByte", year: "2024" },
 ];
 
 const EducationSection = () => {
