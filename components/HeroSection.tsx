@@ -26,7 +26,7 @@ const HeroSection = () => {
             <Image
               height={360}
               width={360}
-              src={`/images/${portfolioData.personal.profileImage}`}
+              src={`/Images/${portfolioData.personal.profileImage}`}
               alt={portfolioData.personal.name}
               className="relative rounded-full w-full h-full object-cover border-4 border-cyan-500/50 shadow-2xl"
             />

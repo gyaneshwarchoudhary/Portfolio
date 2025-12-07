@@ -44,7 +44,7 @@ const Projects = () => {
               <div className="relative h-48 overflow-hidden">
                 <Image
                   fill
-                  src={`/images/${project.image}`}
+                  src={`/Images/${project.image}`}
                   alt={project.title}
                   sizes={
                     idx === 0

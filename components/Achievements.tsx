@@ -74,7 +74,7 @@ const Achievements = () => {
                 {/* Image Section */}
                 <div className="relative h-80 overflow-hidden">
                   <Image
-                    src={`/images/${achievement.image}`}
+                    src={`/Images/${achievement.image}`}
                     fill
                     alt={achievement.project}
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
