@@ -16,7 +16,7 @@ export const portfolioData = {
     { name: "C", icon: "C.svg", category: "Languages" },
     { name: "C++", icon: "C++.svg", category: "Languages" },
     { name: "JavaScript", icon: "JavaScript.svg", category: "Languages" },
-    { name: "TypeScript", icon: "Typescript.svg", category: "Languages" },
+    { name: "TypeScript", icon: "TypeScript.svg", category: "Languages" },
     { name: "Python", icon: "Python.svg", category: "Languages" },
 
     { name: "HTML5", icon: "html-5.svg", category: "Frontend" },
@@ -227,7 +227,7 @@ export const achievementsData = [
     badge: "🏅 Finalist",
     event: "Smart India Hackathon Grand Finale",
 
-    image: "SIH.jpeg",
+    image: "Sih.jpeg",
 
     technicalBreakdown: {
       context:
