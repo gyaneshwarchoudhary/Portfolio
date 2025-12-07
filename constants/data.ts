@@ -227,7 +227,7 @@ export const achievementsData = [
     badge: "🏅 Finalist",
     event: "Smart India Hackathon Grand Finale",
 
-    image: "Sih.jpeg",
+    image: "SIH.jpeg",
 
     technicalBreakdown: {
       context:
